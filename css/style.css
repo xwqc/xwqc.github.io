@@ -994,13 +994,13 @@ footer img {
 	}
 	.link-container .text {
 		float: none;
-		width: 90%; 
+		width: 300px; 
 		text-align: center;
 		font-size: 20px; 
 	}
 	.link-container img {
 		float: none;
-		width: 90%; 
+		width: 200px; 
 		padding: 5px 0px;
 	}
 	footer .border{/*居中*/
