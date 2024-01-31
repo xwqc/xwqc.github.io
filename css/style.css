@@ -275,14 +275,14 @@ a, button {
 
 @font-face {
     font-family: 'LXGWWenKai';
-    src: url('fonts/LXGWWenKai-Regular.ttf') format('truetype'); 
+    src: url('../fonts/LXGWWenKai-Regular.ttf') format('truetype'); 
 	}
 .wenkai{
 	font-family: 'LXGWWenKai';
 }
 @font-face {
     font-family: 'ChillRoundF';
-    src: url('fonts/寒蝉全圆体v3.ttf') format('truetype'); 
+    src: url('../fonts/寒蝉全圆体v3.ttf') format('truetype'); 
 	}
 .quote {
 	width: 600px;
@@ -292,7 +292,7 @@ a, button {
 	/*margin-top: 30px;
 	line-height: 30px;*/
 	color: #0009;
-	font-family: 'LXGWWenKai';
+	font-family: 'LXGWWenKai', sans-serif;
 }
 .quote .remark {
 	padding-top: 10px;
@@ -300,13 +300,13 @@ a, button {
 	/*line-height: 30px;
 	color: #0009;*/
 	font-size: 24px;
-	font-family: 'LXGWWenKai';
+	font-family: 'LXGWWenKai', sans-serif;
 }
 .quote-title {
 	padding: 5px 0px;
 	font-size: 40px;
 	color: #2e2e2e;
-	font-family: 'ChillRoundF';
+	font-family: 'ChillRoundF', sans-serif;
 	text-align: center;
 }
 .quote .play {
@@ -382,9 +382,6 @@ a, button {
 	margin: 0 auto;
 	width: 94%;
 }
-.footer-container {
-	padding: 20px 0px
-}
 .rpic {
 	width: 500px;
 	display: block;
@@ -448,14 +445,6 @@ a, button {
 	font-size: 50px;
 	color: #2E3D49;
 }
-@font-face {
-    font-family: 'LXGWWenKai';
-    src: url('../fonts/LXGWWenKai-Regular.ttf') format('truetype'); 
-	}
-@font-face {
-    font-family: 'ChillRoundF';
-    src: url('../fonts/寒蝉全圆体v3.ttf') format('truetype'); 
-	}
 .shortdesc {
 	padding-top: 5px;
 	font-size: 24px;
@@ -547,7 +536,7 @@ a, button {
 	border: 1px solid #FA4B37;
 	font-size: 15px;
 	color: #272529;
-	font-family: cursive;
+	/*font-family: cursive;*/
 	text-decoration: none;
 }
 .cbox .det a:hover {
@@ -714,7 +703,7 @@ a, button {
 	border: 1px solid #FA4B37;
 	font-size: 15px;
 	color: #272529;
-	font-family: cursive;
+	/*font-family: cursive;*/
 	text-decoration: none;
 }
 .mbox .mdet a:hover{
@@ -732,7 +721,35 @@ a, button {
 .zhpar p {
 margin-bottom: 10px;
 }
-
+.course-title2 {
+	font-size: 30px;
+	text-align:center;
+	/*color: #555;*/
+}
+.course-remark {
+	font-size: 26px;
+	font-family: 'LXGWWenKai', sans-serif;
+	margin-top: 10px;
+	color: #555;
+}
+.course-remark > ul {
+	list-style-type: none; 
+	padding: 0; 
+}
+.course-remark > ul > li {
+  margin-bottom: 20px; 
+	margin-top: 20px;
+	font-size: 26px;
+	font-family: sans-serif;
+}
+.course-remark > ul > ul > li  {
+  margin-bottom: 20px; 
+	font-size: 26px;
+}
+.course-remark > ul > ul > li > span {
+	font-size: 24px;
+	font-family: 'LXGWWenKai', sans-serif;
+}
 .teacher {
 	text-align: left;
 	padding: 50px;
@@ -760,12 +777,14 @@ margin-bottom: 10px;
 	float: left;
 	width: 450px; 
 	text-align: left;
+	font-size: 40px; 
 	/*background-color: blue;*/
 }
-.link-container img {
+.link-container > .image > img {
 	float: left;
 	width: 200px; 
-	padding: 5px 10px;
+	height: 200px; 
+	padding: 5px 0px 5px 10px;
 }
 
 
@@ -880,6 +899,10 @@ footer img {
 		font-size: 24px;
 		color:#57aed1;
 	}
+
+footer {
+	padding: 30px 0; 
+}
 	.footer-container {
 		max-width: 600px;
 	}
@@ -932,11 +955,6 @@ footer img {
 	.title > span{
 		font-size: 26px;
 	}
-	.shortdesc {
-		padding-top: 5px;
-		font-size: 20px;
-		margin-bottom: 5px;
-	}
 	.course-info {
 		padding-top: 40px; 
 		padding-bottom: 20px;
@@ -985,6 +1003,9 @@ footer img {
 	.teacher {
 		padding: 5px;
 	}
+.shortdesc {
+	font-size: 22px;
+}
 	#main2 .title h1 {
 		font-size: 28px; 
 	}
@@ -1006,7 +1027,6 @@ footer img {
 	}
 	.link-container img {
 		float: none;
-		width: 200px; 
 		padding: 5px 0px;
 	}
 	footer .border{/*居中*/
@@ -1019,7 +1039,13 @@ footer img {
 		}
 		.sign-up-contact {
 			font-size: 26px; 
-			width: 540px;
+			width: 100%;
+		}
+		.link-container > .text {
+			float: left;
+			width: 400px; 
+			font-size: 40px; 
+			text-align: left;
 		}
 	}
 }
