@@ -23,6 +23,9 @@ header {
 	width: 100%;
 	text-align: center;
 	z-index: 10;
+	@media screen and (max-width: 960px) {
+			position: relative;
+		}
 }
 
 nav {
@@ -140,6 +143,8 @@ nav {
 		display: block;
 		@media screen and (max-width: 960px) {
 			width: 90%;
+			padding: 0;
+			margin: 10px auto;
 		}
 }
 .empty-container {
@@ -187,6 +192,9 @@ nav {
 /*Section*/
 section {
 	padding: 20px 50px;
+	@media screen and (max-width: 960px) {
+			padding: 15px;
+		}
 }
 .sect-title {
 	font-size: 32px;
@@ -194,6 +202,9 @@ section {
 	margin: 40px 0;
 	padding: 10px;
 	border-bottom: 1px solid #ccc;
+	@media screen and (max-width: 960px) {
+		text-align: center;
+	}
 }
 .sect-body {
 	font-size: 20px;
@@ -212,4 +223,110 @@ section {
 	text-align: left;
 	padding-left: 40px;
 	margin-bottom: 40px;
+	@media screen and (max-width: 960px) {
+		padding:0;
+		text-align: center;
+	}
+}
+
+
+
+.menu {
+	cursor: pointer;
+	width: 32px;
+	display: none;
+	margin-left: 10px;
+	@media screen and (max-width: 960px) {
+		display: flex;
+		flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	}
+}
+
+.nd-animation {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: background-color .2s linear;
+}
+.nd-animation::before {
+	left:0;
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background: white;
+  transform: translateY(-9px);
+  transition: transform .2s linear;
+}
+.nd-animation::after {
+		left:0;
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background: white;
+  transform: translateY(9px);
+  transition: transform .2s linear;
+}
+.is-open {
+	background-color: rgba(255, 255, 255, 0);
+}
+.is-open::before {
+	transform: rotate(-45deg);
+}
+.is-open::after {
+	transform: rotate(45deg);
+}
+.menu-container {
+	position: relative;
+	display: inline-block;
+}
+.menu-options {
+	display: none;
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	margin:0;
+	/*background-color: #444;*/ /* or #9cadb1*/
+	/*background-color: #87cefa;*/ /* or #7ab8cc or #57aed1*/
+	background-color: #7ab8cc;
+	/*padding: 10px;*/
+	/*border-radius: 4px;*/
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.menu-options a {
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	text-align: left;
+	padding: 10px 15px;
+	transition: background-color 0.3s ease;
+	width: 150px; /* 下拉菜单的宽度 */
+	border-bottom: 1px solid #add8e6;
+	margin:0;
+}
+
+.menu-options a:hover {
+	background-color: #555;
+}
+
+.menu-container:hover .menu-options {
+	display: block;
+}
+
+
+@media screen and (max-width: 960px) {
+	nav .item,
+	nav .dropdown,
+	nav .right
+	{
+		display: none;
+	}
 }
