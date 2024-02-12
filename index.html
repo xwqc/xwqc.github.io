@@ -1,38 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Comaptible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>希望泉教会</title>
-    <style>
-        body {
-            text-align: center;
-        }
-				.xwq-school {
-					position: relative;
-					font-size: 40px;
-					text-align: center;
-					height: 100px;
-					width: 500px;
-					border-radius: 10px;
-					border: 2px solid #f0f0f0;
-					background-color: skyblue; 
-					margin: 50px auto ;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					@media screen and (max-width: 700px) {
-						width: 95%;
-						font-size: 26px;
-					}
-				}
-
-				a {
-					text-decoration: none;
-				}
-    </style>
+		<link rel="stylesheet" type="text/css" href="./main.css">
+		<script type="text/javascript" src="script/loadmod.js"></script>
 </head>
 <body>
-	<div class="xwq-school"> <a href="https://xwqc.github.io/school">进入希望泉学校主页</a></div>
+	<header id="header"> </header>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			fetchAndInsertContent("header_content.html", "header");
+		});
+	</script> 
+
+	<div id="main2"> 
+		<div class="empty-container">  </div>
+ </div>	
+
+
+
 </body>
 </html>
