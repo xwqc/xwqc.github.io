@@ -355,7 +355,7 @@ section {
 		display: flex;
 		@media screen and (max-width: 960px) {
 			width: 100%;
-			margin: 50px auto;
+			margin: 5px auto;
 			flex-direction:column;
 			padding: 0px;
 		}
