@@ -207,6 +207,20 @@ section {
 	text-align: justify;
 	text-indent: 40px;
 	margin-bottom: 40px;
+	@media screen and (max-width: 960px) {
+		font-size: 16px;
+		line-height: 24px;
+		text-indent: 0px;
+	}
+}
+.noindent {
+	text-indent: 0px;
+}
+.indent {
+	text-indent: 40px;
+	@media screen and (max-width: 960px) {
+		text-indent: 32px;
+	}
 }
 
 .sect-body p,
@@ -319,6 +333,18 @@ section {
 	display: block;
 }
 
+.notif {
+	font-size:24px;
+	color:green;
+	margin-bottom:20px;
+	@media screen and (max-width: 960px) {
+		font-size:20px;
+	}
+}
+.name {
+	color:#000080;
+	font-weight:bold;
+}
 
 @media screen and (max-width: 960px) {
 	nav .item,
