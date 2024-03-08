@@ -9,6 +9,19 @@
 		<link rel="stylesheet" type="text/css" href="./main.css">
 		<script type="text/javascript" src="script/loadmod.js"></script>
 		<script type="text/javascript" src="script/menu.js"></script>
+		<script>
+			var banners = ["images/extra/20240330.png","images/extra/Fs_2024_MA.jpg"]; 
+			var counter = 0;
+			function run(){
+				setInterval(cycle,1000);  //重复运行cycle函数，周期100ms
+			}
+			function cycle(){
+				counter++;
+				if(counter == banners.length)    
+					counter = 0;
+				document.getElementById("banner").src = banners[counter];
+			}
+		</script>
 </head>
 <body>
 	<header id="header"> </header>
@@ -42,22 +55,9 @@
 					<li>周四慕道友班</li>
 					<li>周日祷告祭坛</li>
 				</ul>
-				<div class="right-img"> 
+				<div class="right-img" onload="run();"> 
 					<!-- <img src="images/extra/20240330.png"> -->
 					<img id="banner" src="images/extra/20240330.png">
-					<script>
-						var banners = ["images/extra/20240330.png","images/extra/Fs_2024_MA.jpg"]; 
-						var counter = 0;
-						function run(){
-							setInterval(cycle,1000);  //重复运行cycle函数，周期100ms
-						}
-						function cycle(){
-							counter++;
-							if(counter == banners.length)    
-								counter = 0;
-							document.getElementById("banner").src = banners[counter];
-						}
-					</script>
 				</div>
 			</div>
 		</div>
