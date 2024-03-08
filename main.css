@@ -136,13 +136,13 @@ nav {
 #main2 {
     margin: 100px auto;
     width: 65%;
-    /*min-width: 950px;*/
+    min-width: 1200px;
     min-height: 100vh;
     background-color: #fff;
     padding: 30px;
     box-shadow: 0 2px 6px rgba(100,100,100,.3);
 		display: block;
-		@media screen and (max-width: 960px) {
+		@media screen and (max-width: 1000px) {
 			width: 100%;
 			padding: 5px;
 			margin: 5px auto;
@@ -165,9 +165,14 @@ nav {
 	margin:0 auto;
 }
 .flex-container {
+	width:100%;
 	display:flex;
 	justify-content: space-between;
 	align-items: stretch;
+	@media screen and (max-width: 1200px) {
+		flex-direction:column;
+		align-items: center;
+		}
 }
 .bg {
 	/*filter: opacity(0.6);*/
@@ -183,10 +188,25 @@ nav {
 	display:flex;
 	flex-direction:column;
 	justify-content: end;
+	@media screen and (max-width: 1200px) {
+		align-items: center;
+		margin-top:80px;
+	}
+	@media screen and (max-width: 600px) {
+		width:100%;
+		justify-content: start;
+		margin-top:80px;
+		}
 }
 .ws {
+	width:100%;
 	margin-top:20px;
 	font-size:28px;
+	white-space: initial;
+	@media screen and (max-width: 1200px) {}
+	@media screen and (max-width: 600px) {
+	font-size:24px;
+}
 }
 .news {
 	/*align-self: flex-start;
@@ -199,6 +219,10 @@ nav {
 	margin:40px auto;
 	padding:0 10px;
 	/*background-color: #f0f0f0;*/
+	@media screen and (max-width: 1200px) {
+	height:auto;
+	border-radius: 5px;
+	}
 }
 .news-title {
 	display: inline-block;
@@ -214,6 +238,9 @@ nav {
 	width:500px;
 	list-style: none;
 	padding:40px 0px;
+	@media screen and (max-width: 500px) {
+	width:100%;
+	}
 }
 .news-list li {
 	margin-left:40px;
@@ -228,9 +255,17 @@ nav {
 	width:500px;
 	height:700px;
 	overflow:hidden;
+	@media screen and (max-width: 500px) {
+	width:100%;
+	height:auto;
+	}
 }
 .right-img img {
 	height:100%;
+	@media screen and (max-width: 500px) {
+	width:100%;
+	height:auto;
+	}
 }
 
 /*box container*/
