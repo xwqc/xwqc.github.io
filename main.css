@@ -240,6 +240,10 @@ nav {
 	width:500px;
 	list-style: none;
 	padding:40px 0px;
+	background-image: url('images/extra/grass.png'); 
+  	background-size: cover;
+	background-repeat: no-repeat;
+  	background-position: center;*/
 	@media screen and (max-width: 500px) {
 	width:100%;
 	}
