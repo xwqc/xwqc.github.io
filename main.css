@@ -202,6 +202,7 @@ section {
 }
 .sect-body,
 .apostle-creed {
+	display:block;
 	font-size: 20px;
 	line-height: 30px;
 	text-align: justify;
@@ -225,6 +226,22 @@ section {
 .apostle-creed p
 {
 	margin-bottom: 10px;
+}
+.img-poster,
+.img-fs {
+	width:600px;
+	height:100%;
+	display:block;
+	margin-left:40px;
+	@media screen and (max-width: 600px) {
+	width:100%;
+	margin:10px auto;
+	}
+}
+.sect-body ul li {
+	margin-left:50px;
+	padding-left:5px;
+	text-indent: 0px;
 }
 
 .subtitle {
