@@ -19,8 +19,49 @@
 	</script> 
 
 	<div id="main2"> 
-		<div class="empty-container">  </div>
- </div>	
+		<div class="flex-container bg">
+			<div class="icon-container"> 
+				<img src="images/icon/USVA_headstone_emb-30.svg" class="icon">
+				<p>马德里</p>
+				<p>希望泉华人宣道会</p>
+			</div>
+			<div class="ann">
+				<p>欢迎来到希望泉教会</p>
+				<br><br>
+				<p class="ws">聚会时间：周日上午11点</p>
+				<p class="ws">地点：C. de Nicolás Usera, 47, 28026 Madrid</p>
+			</div>
+		</div>
+		<div class="news">
+			<div class="news-title"> 近期活动</div>
+			<div class="flex-container">
+				<ul class="news-list">
+					<li>圣周郊游日</li>
+					<li>周六团契</li>
+					<li>周四免费西语班</li>
+					<li>周四慕道友班</li>
+					<li>周日祷告祭坛</li>
+				</ul>
+				<div class="right-img"> 
+					<!-- <img src="images/extra/20240330.png"> -->
+					<img id="banner" src="images/extra/20240330.png">
+					<script>
+						var banners = ["images/extra/20240330.png","images/extra/Fs_2024_MA.jpg"]; 
+						var counter = 0;
+						function run(){
+							setInterval(cycle,1000);  //重复运行cycle函数，周期100ms
+						}
+						function cycle(){
+							counter++;
+							if(counter == banners.length)    
+								counter = 0;
+							document.getElementById("banner").src = banners[counter];
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>	
 
 
 
