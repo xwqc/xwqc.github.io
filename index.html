@@ -10,18 +10,25 @@
 		<script type="text/javascript" src="script/loadmod.js"></script>
 		<script type="text/javascript" src="script/menu.js"></script>
 		<script>
-			var banners = ["images/extra/20240330.png","images/extra/Fs_2024_MA.jpg"]; 
-			var counter = 0;
-			function run(){
-				setInterval(cycle,1000);  //重复运行cycle函数，周期100ms
-			}
-			function cycle(){
-				counter++;
-				if(counter == banners.length)    
-					counter = 0;
-				document.getElementById("banner").src = banners[counter];
-			}
-		</script>
+    var banners = ["images/extra/20240330.png", "images/extra/Fs_2024_MA.jpg"]; 
+    var counter = 0;
+
+    // 在页面加载完毕后再执行轮播
+    window.onload = function() {
+        run();
+    };
+
+    function run() {
+        setInterval(cycle, 2000);  // 重复运行cycle函数，周期1000ms
+    }
+
+    function cycle() {
+        counter++;
+        if (counter == banners.length)    
+            counter = 0;
+        document.getElementById("banner").src = banners[counter];
+    }
+</script>
 </head>
 <body>
 	<header id="header"> </header>
