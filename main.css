@@ -667,7 +667,67 @@ padding: 5px;
 	list-style-position: inside; 
 }
 
+.footer-container {
+	display: flex;
+	justify-content: center;
+	background-color: #444;
+	padding: 40px 0;
+	color:#FFF;
+	@media screen and (max-width: 1200px) {
+		flex-direction:column;
+		width:100%;
+		padding:0 20px;
+	}
+}
+.footer-container .left-col p {
+	font-size: 20px;
+	margin-bottom:20px;
+}
+.footer-container .right-col p {
+	font-size: 20px;
+	margin-bottom:40px;
+}
+.footer-container .left-col p img {
+	width: 20px;
+}
+.footer-title {
+	font-weight:bold;
+	font-size: 30px;
+	/*margin-bottom:30px;*/
+}
+.footer-title img {
+width:30px;
+}
+.left-col, .right-col {
+	width:32%;
+	@media screen and (max-width: 1200px) {
+		width:600px;
+	}
+	@media screen and (max-width: 600px) {
+		width:100%;
+	}
+}
 
+.left-col .border{
+	width: 180px;
+	height: 4px;
+	background: linear-gradient(to right, #FA4B37, #DF2771);
+	margin-top: 2px;
+	margin-bottom: 40px; 
+	display: block;
+}
+.right-col .border{
+	width: 180px;
+	height: 4px;
+	background: linear-gradient(to right, #FA4B37, #DF2771);
+	margin-top: 2px;
+	margin-bottom: 10px; 
+	display: block;
+}
+.right-col p a {
+	text-decoration: none;
+	color:#FFF;
+}
 @media screen and (max-width: 960px) {
 	nav .item,
 	nav .dropdown,
