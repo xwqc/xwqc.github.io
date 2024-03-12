@@ -237,12 +237,12 @@ nav {
 	color:#57aed1;
 }
 .news-list { 
-	width:500px;
+	width:550px;
 	background-image: url('images/extra/grass.png'); 
   background-size: cover;
 	background-repeat: no-repeat;
   background-position: center;
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 550px) {
 	width:100%;
 	padding-bottom: 80px;
 	}
@@ -268,19 +268,21 @@ nav {
 	background-color: #91cae1;
 }
 .right-img {
-	width:500px;
+	position:relative;
+	width:550px;
 	height:700px;
 	overflow:hidden;
-	@media screen and (max-width: 500px) {
-	width:100%;
-	height:auto;
+	@media screen and (max-width: 550px) {
+	width:auto;
+	height:500px;
 	}
 }
-.right-img img {
-	height:100%;
-	@media screen and (max-width: 500px) {
-	width:100%;
-	height:auto;
+.right-img > img {
+	height:690px;
+	display:block;
+	@media screen and (max-width: 550px) {
+	max-width:100%;
+	height:500px;
 	}
 }
 
@@ -373,6 +375,7 @@ section {
 }
 .sect-body ul li {
 	margin-left:50px;
+	margin-bottom:20px;
 	padding-left:5px;
 	text-indent: 0px;
 }
@@ -494,6 +497,63 @@ section {
 	font-weight:bold;
 }
 
+/*循环播放图片*/
+
+    .active {
+      opacity: 1;
+    }
+    .prev-img,
+    .next-img {
+      width: 22px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+    }
+    .prev-img {
+      left: 20px;
+      /*background: url(prev.png) no-repeat center center;*/
+    }
+    .next-img {
+      right: 20px;
+      /*background: url(next.png) no-repeat center center;*/
+    }
+    .cycle {
+      width: 100px;
+      position: absolute;
+			/*top: 50%;*/
+			/*left: 50%;*/
+			/*transform: translate(-50%, -50%);*/
+			left: 50%;
+			bottom:10px;
+			transform: translateX(-50%);
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+    }
+    .cycle ul {
+      list-style: none;
+			display:block;
+    }
+    .cycle > img {
+			display:block;
+			width:20px;
+    }
+    .cycle ul li {
+      list-style: none;
+      display:inline;
+    }
+    .cyc-btn {
+      float: left;
+      margin: 0 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: skyblue;
+    }
+    .cyc-btn-active {
+      background-color: orange;
+    }
 /*文章*/
 #main3 {
     margin: 100px auto;
