@@ -271,7 +271,7 @@ nav {
 .news-list ul li:hover {
 	background-color: #91cae1;
 }
-.right-img {
+.img-container {
 	position:relative;
 	width:550px;
 	height:700px;
@@ -281,7 +281,7 @@ nav {
 	height:500px;
 	}
 }
-.right-img > img {
+#banner {
 	height:690px;
 	display:block;
 	@media screen and (max-width: 550px) {
@@ -505,22 +505,6 @@ section {
 
     .active {
       opacity: 1;
-    }
-    .prev-img,
-    .next-img {
-      width: 22px;
-      height: 40px;
-      position: absolute;
-      top: 50%;
-      margin-top: -20px;
-    }
-    .prev-img {
-      left: 20px;
-      /*background: url(prev.png) no-repeat center center;*/
-    }
-    .next-img {
-      right: 20px;
-      /*background: url(next.png) no-repeat center center;*/
     }
     .cycle {
       width: 100px;

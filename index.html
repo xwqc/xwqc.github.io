@@ -9,8 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="./main.css">
 		<script type="text/javascript" src="script/loadmod.js"></script>
 		<script type="text/javascript" src="script/menu.js"></script>
-		<script>
-    var banners = ["images/extra/20240330.png", "images/extra/Fs_2024_MA.jpg"]; 
+		<!-- <script>
+    var banners = ["images/extra/20240330.png", "images/extra/Fs_2024_MA.jpg", "images/extra/mathposter.png"]; 
     var counter = 0;
 
     // 在页面加载完毕后再执行轮播
@@ -19,7 +19,7 @@
     };
 
     function run() {
-        setInterval(cycle, 2000);  // 重复运行cycle函数，周期2000ms
+        setInterval(cycle, 3000);  // 重复运行cycle函数，周期2000ms
     }
 
     function cycle() {
@@ -44,7 +44,7 @@
 				counter = 0;
 			document.getElementById("banner").src = banners[counter];
 		}
-		</script>
+		</script> -->
 </head>
 <body>
 	<header id="header"> </header>
@@ -69,7 +69,7 @@
 			</div>
 		</div>
 		<div class="news">
-			<div class="news-title"> 近期活动</div>
+			<div class="news-title"> 近期事项</div>
 			<div class="flex-container">
 				<div class="news-list"> 
 					<ul>
@@ -81,22 +81,24 @@
 						<li><a href="https://xwqc.github.io/school/">希望泉学校</a></li>
 					</ul>
 				</div>
-				<div class="right-img" onload="run();"> 
-					<img id="banner" src="images/extra/20240330.png">
+				<!-- <div class="img-container" onload="run();"> -->
+				<div class="img-container"> 
+						<img id="banner" src="images/extra/20240330.png">
 					<div class="cycle">
-					<button onclick="prevImage()"><img src="images/icon/prev.png"></button> 
-						<!-- <img src="images/icon/prev.png"> -->
+						<button class="prev" onclick="prevImg()">
+							<img src="images/icon/prev.png">
+						</button> 
 						<ul>
 							<li class="cyc-btn cyc-btn-active"></li>
 							<li class="cyc-btn"></li>
 							<li class="cyc-btn"></li>
 						</ul>
-						<!-- <img src="images/icon/next.png"> -->
-					<button onclick="prevImage()"><img src="images/icon/next.png"></button> 
+						<button class="next" onclick="nextImg()">
+							<img src="images/icon/next.png">
+						</button> 
 					</div>
-
 				</div>
-
+				<script src="script/cycle.js"></script>
 			</div>
 		</div>
 	</div>	
