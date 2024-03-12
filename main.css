@@ -247,6 +247,10 @@ nav {
 	padding-bottom: 80px;
 	}
 }
+.news-list a {
+	text-decoration: none;
+	color:#000;
+} 
 .news-list ul {
 	list-style: none;
 	padding:40px 0px;
@@ -535,8 +539,16 @@ section {
       list-style: none;
 			display:block;
     }
-    .cycle > img {
+		.cycle button {
+			width:20px;
+			height:20px;
 			display:block;
+			cursor: pointer;
+			border:none;
+			background-color: transparent;
+			outline: none;
+		}
+    .cycle button > img {
 			width:20px;
     }
     .cycle ul li {
@@ -771,7 +783,7 @@ width:30px;
 .left-col .border{
 	width: 180px;
 	height: 4px;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, red, yellow, green);
 	margin-top: 2px;
 	margin-bottom: 40px; 
 	display: block;
@@ -779,7 +791,7 @@ width:30px;
 .right-col .border{
 	width: 180px;
 	height: 4px;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, red, yellow, green, blue, purple);
 	margin-top: 2px;
 	margin-bottom: 10px; 
 	display: block;
