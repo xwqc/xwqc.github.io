@@ -224,6 +224,7 @@ nav {
 	@media screen and (max-width: 1200px) {
 	height:auto;
 	border-radius: 5px;
+	padding:10px 5px;
 	}
 }
 .news-title {
@@ -238,6 +239,7 @@ nav {
 }
 .news-list { 
 	width:550px;
+	margin:5px;
 	background-image: url('images/extra/grass.png'); 
   background-size: cover;
 	background-repeat: no-repeat;
@@ -276,6 +278,7 @@ nav {
 	width:550px;
 	height:700px;
 	overflow:hidden;
+	margin:5px;
 	@media screen and (max-width: 550px) {
 	width:auto;
 	height:500px;
@@ -284,6 +287,7 @@ nav {
 #banner {
 	height:690px;
 	display:block;
+	margin:0 auto;
 	@media screen and (max-width: 550px) {
 	max-width:100%;
 	height:500px;
@@ -382,6 +386,9 @@ section {
 	margin-bottom:20px;
 	padding-left:5px;
 	text-indent: 0px;
+	@media screen and (max-width: 1200px) {
+	margin-left:30px;
+	}
 }
 
 .subtitle {
@@ -518,6 +525,9 @@ section {
 			display:flex;
 			justify-content:space-between;
 			align-items:center;
+	@media screen and (max-width: 1200px) {
+			bottom:0px;
+	}
     }
     .cycle ul {
       list-style: none;
@@ -756,6 +766,7 @@ width:30px;
 }
 .left-col, .right-col {
 	width:32%;
+	padding:20px 0px;
 	@media screen and (max-width: 1200px) {
 		width:600px;
 	}
