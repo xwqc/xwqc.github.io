@@ -25,8 +25,8 @@ function nextImg() {
 			index = index % banners.length;
 			fadeIn();//上一张图片消失，这张图片就要显示，执行此函数
 		}
-		item.src = banners[index];
 		item.style.opacity = opa;//当前的图片的透明度随着opa的减少减少
+		item.src = banners[index];
 
 		// btn按钮组样式重置
 		for (var i = 0; i < btn.length; i++) {
@@ -45,7 +45,7 @@ function fadeIn() {
 			clearInterval(time2);
 			opa = 1;
 		}
-		item.src = banners[index];
+		//item.src = banners[index];
 		item.style.opacity = opa;//这里的index就是上张图片的index++;
 	}, 16.7)
 }
@@ -85,8 +85,8 @@ pre.onclick = function () {
 			}
 			fadeIn(); //此时显示的就是上张图片
 		}
-		item.src = banners[index];
 		item.style.opacity = opa;
+		item.src = banners[index];
 
 		// btn按钮组样式重置
 		for (var i = 0; i < btn.length; i++) {
