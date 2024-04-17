@@ -23,9 +23,6 @@ header {
 	width: 100%;
 	text-align: center;
 	z-index: 10;
-	@media screen and (max-width: 960px) {
-			position: relative;
-		}
 }
 
 nav {
@@ -142,21 +139,11 @@ nav {
     padding: 30px;
     box-shadow: 0 2px 6px rgba(100,100,100,.3);
 		display: block;
-		@media screen and (max-width: 1200px) {
-			width: 100%;
-			min-width: auto;
-			min-height: auto;
-			padding: 5px;
-			margin: 5px auto;
-		}
 }
 .icon-container {
 	width:400px;
 	font-size:40px;
 	font-weight:bold;
-	@media screen and (max-width: 400px) {
-		width:100%;
-		}
 }
 .icon-container p {
 	text-align:center;
@@ -171,10 +158,6 @@ nav {
 	display:flex;
 	justify-content: space-between;
 	align-items: stretch;
-	@media screen and (max-width: 1200px) {
-		flex-direction:column;
-		align-items: center;
-		}
 }
 .bg {
 	/*filter: opacity(0.6);*/
@@ -190,25 +173,12 @@ nav {
 	display:flex;
 	flex-direction:column;
 	justify-content: end;
-	@media screen and (max-width: 1200px) {
-		align-items: center;
-		margin-top:80px;
-	}
-	@media screen and (max-width: 600px) {
-		width:100%;
-		justify-content: start;
-		margin-top:80px;
-		}
 }
 .ws {
 	width:100%;
 	margin-top:20px;
 	font-size:28px;
 	white-space: initial;
-	@media screen and (max-width: 1200px) {
-		font-size:24px;
-		text-align:center;
-	}
 }
 .news {
 	/*align-self: flex-start;
@@ -221,11 +191,6 @@ nav {
 	margin:40px auto;
 	padding:0 10px;
 	/*background-color: #f0f0f0;*/
-	@media screen and (max-width: 1200px) {
-	height:auto;
-	border-radius: 5px;
-	padding:10px 5px;
-	}
 }
 .news-title {
 	display: inline-block;
@@ -244,11 +209,6 @@ nav {
   background-size: cover;
 	background-repeat: no-repeat;
   background-position: center;
-	@media screen and (max-width: 550px) {
-	width:100%;
-	height:600px;
-	/*padding-bottom: 80px;*/
-	}
 }
 .news-list a {
 	text-decoration: none;
@@ -257,19 +217,12 @@ nav {
 .news-list ul {
 	list-style: none;
 	padding:40px 0px;
-	@media screen and (max-width: 1200px) {
-	padding: 0px;
-	padding-bottom: 20px;
-	}
 }
 .news-list ul li {
 	margin-left:40px;
 	margin-bottom:20px;
 	font-size:26px;
 	border-bottom: 1px solid #ccc;
-	@media screen and (max-width: 1200px) {
-	margin: 20px;
-	}
 }
 .news-list ul li:hover {
 	background-color: #91cae1;
@@ -280,19 +233,11 @@ nav {
 	height:700px;
 	overflow:hidden;
 	margin:5px;
-	@media screen and (max-width: 550px) {
-	width:auto;
-	height:500px;
-	}
 }
 #banner {
 	height:690px;
 	display:block;
 	margin:0 auto;
-	@media screen and (max-width: 550px) {
-	max-width:100%;
-	height:500px;
-	}
 }
 
 /*box container*/
@@ -329,9 +274,6 @@ nav {
 /*Section*/
 section {
 	padding: 20px 50px;
-	@media screen and (max-width: 960px) {
-			padding: 15px;
-		}
 }
 .sect-title
 {
@@ -340,9 +282,6 @@ section {
 	margin: 40px 0;
 	padding: 10px;
 	border-bottom: 1px solid #ccc;
-	@media screen and (max-width: 960px) {
-		text-align: center;
-	}
 }
 .sect-body,
 .apostle-creed {
@@ -352,18 +291,12 @@ section {
 	text-align: justify;
 	text-indent: 40px;
 	margin-bottom: 40px;
-	@media screen and (max-width: 960px) {
-		text-indent: 0px;
-	}
 }
 .noindent {
 	text-indent: 0px;
 }
 .indent {
 	text-indent: 40px;
-	@media screen and (max-width: 960px) {
-		text-indent: 32px;
-	}
 }
 
 .sect-body p,
@@ -377,19 +310,12 @@ section {
 	height:100%;
 	display:block;
 	margin-left:40px;
-	@media screen and (max-width: 600px) {
-	width:100%;
-	margin:10px auto;
-	}
 }
 .sect-body ul li {
 	margin-left:50px;
 	margin-bottom:20px;
 	padding-left:5px;
 	text-indent: 0px;
-	@media screen and (max-width: 1200px) {
-	margin-left:30px;
-	}
 }
 
 .subtitle {
@@ -397,11 +323,6 @@ section {
 	text-align: left;
 	padding-left: 40px;
 	margin-bottom: 40px;
-	@media screen and (max-width: 960px) {
-		padding:0;
-		font-size: 26px;
-		text-align: center;
-	}
 }
 
 
@@ -411,13 +332,6 @@ section {
 	width: 32px;
 	display: none;
 	margin-left: 10px;
-	@media screen and (max-width: 960px) {
-		display: flex;
-		flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	}
 }
 
 .nd-animation {
@@ -500,9 +414,6 @@ section {
 	font-size:24px;
 	color:green;
 	margin-bottom:20px;
-	@media screen and (max-width: 960px) {
-		font-size:20px;
-	}
 }
 .name {
 	color:#000080;
@@ -526,9 +437,6 @@ section {
 			display:flex;
 			justify-content:space-between;
 			align-items:center;
-	@media screen and (max-width: 1200px) {
-			bottom:0px;
-	}
     }
     .cycle ul {
       list-style: none;
@@ -570,19 +478,10 @@ section {
     padding: 30px;
     box-shadow: 0 2px 6px rgba(100,100,100,.3);
 		display: flex;
-		@media screen and (max-width: 960px) {
-			width: 100%;
-			margin: 5px auto;
-			flex-direction:column;
-			padding: 0px;
-		}
 }
 .poster-container {
 	width: 75%;
 	padding: 20px;
-		@media screen and (max-width: 960px) {
-			width: 100%;
-		}
 }
 .poster-title {
 	font-size: 32px;
@@ -604,10 +503,6 @@ section {
 .poster-mate > div {
 	display:inline;
 	padding: 5px 40px;
-		@media screen and (max-width: 960px) {
-			display:block;
-			text-align:center;
-		}
 }
 .poster-body {
 	font-size: 20px;
@@ -630,9 +525,6 @@ section {
 	display: block;
 	/*background-color: #f4f4f4;*/
 	align-self: flex-start; 
-	@media screen and (max-width: 960px) {
-	width: 100%;
-	}
 }
 .sidebar button {
 	display: none;
@@ -648,9 +540,6 @@ section {
 	box-shadow:0px 1px 1px rgba(0,0,0,0.1);
 	margin:0 auto;
 	margin-top: 120px;
-	@media screen and (max-width: 960px) {
-		display:none;
-	}
 }
 .body-list ul{
 	list-style-type: none;
@@ -740,11 +629,6 @@ padding: 5px;
 	background-color: #444;
 	padding: 40px 0;
 	color:#FFF;
-	@media screen and (max-width: 1200px) {
-		flex-direction:column;
-		width:100%;
-		padding:0 20px;
-	}
 }
 .footer-container .left-col p {
 	font-size: 20px;
@@ -768,12 +652,6 @@ width:30px;
 .left-col, .right-col {
 	width:32%;
 	padding:20px 0px;
-	@media screen and (max-width: 1200px) {
-		width:600px;
-	}
-	@media screen and (max-width: 600px) {
-		width:100%;
-	}
 }
 
 .left-col .border{
@@ -796,14 +674,145 @@ width:30px;
 	text-decoration: none;
 	color:#FFF;
 }
+
+@media screen and (max-width: 1200px) {
+	#main2 {
+		width: 100%;
+		min-width: auto;
+		min-height: auto;
+		padding: 5px;
+		margin: 5px auto;
+	}
+	.flex-container {
+		flex-direction:column;
+		align-items: center;
+	}
+	.ann {
+		align-items: center;
+		margin-top:80px;
+	}
+	.ws {
+		font-size:24px;
+		text-align:center;
+	}
+	.news {
+	height:auto;
+	border-radius: 5px;
+	padding:10px 5px;
+	}
+	.news-list ul {
+	padding: 0px;
+	padding-bottom: 20px;
+	}
+	.news-list ul li {
+	margin: 20px;
+	}
+	.sect-body ul li {
+	margin-left:30px;
+	}
+	.cycle {
+			bottom:0px;
+	}
+	.footer-container {
+		flex-direction:column;
+		width:100%;
+		padding:0 20px;
+	}
+	.left-col, .right-col {
+		width:600px;
+	}
+}
 @media screen and (max-width: 960px) {
+	header {
+		position: relative;
+	}
 	nav .item,
 	nav .dropdown,
-	nav .right
-	{
+	nav .right{
 		display: none;
+	}
+	section {
+		padding: 15px;
+	}
+	.sect-title {
+		text-align: center;
+	}
+	.sect-body,
+	.apostle-creed {
+		text-indent: 0px;
 	}
 	.apostle-creed p {
 		display:inline;
+	}
+	.indent {
+		text-indent: 32px;
+	}
+	.subtitle {
+		padding:0;
+		font-size: 26px;
+		text-align: center;
+	}
+	.menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.notif {
+		font-size:20px;
+	}
+	#main3 {
+		width: 100%;
+		margin: 5px auto;
+		flex-direction:column;
+		padding: 0px;
+	}
+	.poster-container {
+		width: 100%;
+	}
+	.poster-mate > div {
+		display:block;
+		text-align:center;
+	}
+	.sidebar {
+		width: 100%;
+	}
+	.calendar {
+		display:none;
+	}
+}
+@media screen and (max-width: 600px) {
+	.ann{
+		width:100%;
+		justify-content: start;
+		margin-top:80px;
+	}
+	.img-poster, .img-fs  {
+		width:100%;
+		margin:10px auto;
+	}
+	.left-col, .right-co {
+		width:100%;
+	}
+}
+@media screen and (max-width: 550px) {
+	.news-list {
+		width:100%;
+		height:600px;
+		/*padding-bottom: 80px;*/
+	}
+	.img-container {
+		width:auto;
+		height:500px;
+	}
+	#banner {
+		max-width:100%;
+		height:500px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.icon-container {
+		width:100%;
 	}
 }
