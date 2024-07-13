@@ -9,7 +9,6 @@ var opa = 1; //通过控制透明度opacity来实现图片的渐隐渐现的效�
 var time1, time2;
 var index = 0; //记录图片的下标
 
-// 切换下一张图片效果实现
 function nextImg() {
     if (time1) {
         clearInterval(time1);
@@ -20,37 +19,39 @@ function nextImg() {
         // 满足条件，证明当前的图片已经看不见，下一张图片就开始出现
         if (opa <= 0) {
             clearInterval(time1);
-            opa = 0;//以防万一，再给它赋值为0；这样透明度就为0
-            index++;//下一张图片的索引就是index++; 
-            index = index % banners.length;
+            opa = 0; // 以防万一，再给它赋值为0；这样透明度就为0
+            index = (index + 1) % banners.length;
             item.src = banners[index];
-            fadeIn();//上一张图片消失，这张图片就要显示，执行此函数
+            fadeIn(); // 上一张图片消失，这张图片就要显示，执行此函数
         }
-        item.style.opacity = opa;//当前的图片的透明度随着opa的减少减少
+        item.style.opacity = opa; // 当前的图片的透明度随着opa的减少减少
     }, 50); // 调整时间间隔以确保效果平滑
-
-    // btn按钮组样式重置
-    for (var i = 0; i < btn.length; i++) {
-        btn[i].style.backgroundColor = 'skyblue';
-    }
-    // 当前图片的点样式高亮
-    btn[index].style.backgroundColor = 'orange';
 }
 
-// 控制图片的出现
 function fadeIn() {
     time2 = setInterval(function () {
         opa += 0.1;
         if (opa >= 1) {
             clearInterval(time2);
             opa = 1;
+
+            // btn按钮组样式重置
+            for (var i = 0; i < btn.length; i++) {
+                btn[i].style.backgroundColor = 'skyblue';
+            }
+            // 当前图片的点样式高亮
+            btn[index].style.backgroundColor = 'orange';
         }
-        item.style.opacity = opa;//这里的index就是上张图片的index++;
+        item.style.opacity = opa; // 这里的index就是上张图片的index++;
     }, 50); // 调整时间间隔以确保效果平滑
 }
 
+// 初始化时立即显示第一张图片
+item.src = banners[index];
+btn[index].style.backgroundColor = 'orange';
+
 // 控制图片的自动播放
-var autoPlay = setInterval(nextImg, 3000); //默认计时器打开
+var autoPlay = setInterval(nextImg, 3000); // 默认计时器打开
 
 //鼠标进入清除计时器，停止播放
 wrap.onmouseenter = function () {
@@ -78,12 +79,9 @@ pre.onclick = function () {
         if (opa <= 0) {
             clearInterval(time1);
             opa = 0;
-            index--; //上张图片的index
-            if (index < 0) { //如果索引值小与0，那就从图片的最后一个重新开始
-                index = banners.length - 1;
-            }
+            index = (index - 1 + banners.length) % banners.length; // 上张图片的index
             item.src = banners[index];
-            fadeIn(); //此时显示的就是上张图片
+            fadeIn(); // 此时显示的就是上张图片
         }
         item.style.opacity = opa;
     }, 50); // 调整时间间隔以确保效果平滑
@@ -100,10 +98,9 @@ for (var i = 0; i < btn.length; i++) {
     btn[i].index = i;
     btn[i].onclick = function () {
         // 切换下一张图片
-        // 提前存储this
         var that = this;
         if (time1) {
-            clearInterval(time1)
+            clearInterval(time1);
         }
         time1 = setInterval(function () {
             opa -= 0.1;
