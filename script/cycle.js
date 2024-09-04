@@ -1,4 +1,4 @@
-var banners = ["images/extra/20240330.png", "images/extra/Fs_2024_MA.jpg", "images/extra/mathposter.png"]; 
+var banners = ["images/extra/20240330.png", "images/extra/Fs_2024_MA.jpg", "images/extra/ICRE.jpg"]; 
 var item = document.getElementById("banner");
 var wrap = document.querySelector('.img-container');
 var btn = document.querySelectorAll('.cyc-btn'); // cyc-btn按钮组
